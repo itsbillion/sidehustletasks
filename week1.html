@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 1 Assignment</title>
+</head>
+<body>
+    <header>
+        <h1>PERSONAL INFORMATION</h1>
+    </header>
+    <form action= "#" method="post" enctype="text/plain" id="personalinformation">
+        <fieldset style="width: fit-content;">
+            <legend><strong>Biodata</strong></legend>
+            <table cellspacing = "10px">
+                <tr>
+                    <td>
+                        <label for="fullname">Full Name:</label>
+                    </td>
+                    <td>
+                        <input type="text" name="fullname" placeholder="John Doe" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="E-mail">E-mail:</label>
+                    </td>
+                    <td>
+                        <input type="email" name="E-mail" placeholder="example@mail.com" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="phonenumber">Phone Number:</label>
+                    </td>
+                    <td>
+                        <input type="tel" name="phonenumber" pattern="[0-9]{11}" placeholder = "11 digit no. required" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Gender:</p>
+                    </td>
+                    <td>
+                        <label for="Male">Male</label>
+                        <input type="radio" name="sex" id="Male" value="male" required>
+                        <label for="Female">Female</label>
+                        <input type="radio" name="sex" id="Female" value="Female">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="password">Password: </label>
+                    </td>
+                    <td>
+                        <input type="password" name="password" class="password" minlength="5" placeholder="min 5. characters" required>
+                    </td>
+                </tr>
+                
+            </table>
+            <input type="submit" value="Click Here To Submit">
+        </fieldset>
+    </form>
+
+</body>
+</html>
