@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 2 Assignment</title>
+    <style>
+        body {
+            background-color: #F9F5EB;
+        }
+        header {
+    background-color: #8D7B68;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 15px 20px;
+}
+header h1 {
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+}
+fieldset {
+    border-style: solid; 
+    border: 2px; 
+    border-radius: 10%;
+    margin: 0 auto;
+    width: 50%;
+}
+body section#form {
+    background-color: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50%;
+}
+form#personalinformation input {
+    border-style: solid;
+    background-color: whitesmoke;
+    width: 300px;
+    height: 30px;
+    border-radius: 5px;
+}
+button#submitpersonalinformation {
+    background-color: #8D7B68;
+    color: whitesmoke;
+    border-style: none;
+    width: 150px;
+    height: 30px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 15px;
+}
+button#submitpersonalinformation:hover {
+    background-color: #F1DEC9;
+    color: black;
+}
+form {
+    padding: 5px;
+    border-style: solid;
+    border-radius: 10px;
+    border: 10px;
+    border-color: black;
+}
+label {
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Personal Information</h1>
+    </header>
+    <section id="form" style="margin-top: 5%;">
+        <form action="#" method="post" enctype="text/plain" onsubmit="success()" id="personalinformation">
+            <fieldset>
+                <legend style="text-align: center; font-family: 'Times New Roman', Times, serif; text-transform: uppercase;">
+                    <strong>Biodata</strong>
+                </legend>
+                <label for="fullname"></label>
+                <br>
+                <input type="text" name="" id="fullname" placeholder="Full Name" required>
+                <br>
+                <label for="email address"></label>
+                <br>
+                <input type="email" id="email address" placeholder="E-mail Address" required>
+                <br>
+                <label for="phonenumber"></label>
+                <br>
+                <input type="tel" name="" id="phonenumber" placeholder="Enter 11-digit Phone Number" pattern="[0-9]{11}" required>
+                <br>
+                <br>
+                <label for="sex" style="padding: 5px;">Select Gender</label>
+                <select name="" id="sex" style="border-radius: 5px; background-color: #8D7B68; color: white;">
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                    <option value="prefer not to say">Prefer Not to Say</option>
+                </select>
+                <br>
+                <label for="password"></label>
+                <br>
+                <input type="password" name="" id="password" placeholder="Enter Password [min. 5 characters]" minlength="5">
+                <br>
+                <br>
+                <button type="submit" id="submitpersonalinformation">SUBMIT</button>
+            </fieldset>
+        </form>
+    </section>
+    <script>
+         function success() {
+          alert("Submitted!");
+        }
+    </script>
+</body>
+</html>
